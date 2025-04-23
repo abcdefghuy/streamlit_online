@@ -23,8 +23,9 @@ with col1:
     ctx = webrtc_streamer(key="example", video_frame_callback=video_frame_callback, 
                           
                           rtc_configuration={"iceServers": [
-                              {"urls": ["stun:stun.cheapvoip.com:3478"]
-                               }
+                               "urls": ["stun:relay1.expressturn.com:3478"],
+      "username": "efQB4HTEGI9W41QMFK",
+      "credential": "W1pfkptr9mSZn5Fe"
                                ]
                                },
                           media_stream_constraints={"video": True, "audio": False})
