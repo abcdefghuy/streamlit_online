@@ -2,7 +2,6 @@ import threading
 
 import cv2
 import streamlit as st
-from matplotlib import pyplot as plt
 
 from streamlit_webrtc import webrtc_streamer
 
