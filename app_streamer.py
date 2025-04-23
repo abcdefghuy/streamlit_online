@@ -23,11 +23,7 @@ with col1:
     ctx = webrtc_streamer(key="example", video_frame_callback=video_frame_callback, 
                           
                           rtc_configuration={"iceServers": [
-                              {"urls": ["stun:stun.l.google.com:19302"],
-                               "urls": ["stun:stun1.l.google.com:19302"],
-                               "urls": ["stun:stun2.l.google.com:19302"],
-                               "urls": ["stun:stun3.l.google.com:19302"],
-                               "urls": ["stun:stun4.l.google.com:19302"]
+                              {"urls": ["stun:stun.stunprotocol.org:3478"]
                                }
                                ]
                                },
@@ -36,7 +32,6 @@ with col1:
 imgout_frame =col2.empty()
 
 fig_place = col2.empty()
-fig, ax = plt.subplots(1, 1)
 
 while ctx.state.playing:
     with lock:
