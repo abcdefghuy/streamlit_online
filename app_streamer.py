@@ -23,7 +23,7 @@ with col1:
     ctx = webrtc_streamer(key="example", video_frame_callback=video_frame_callback, 
                           
                           rtc_configuration={"iceServers": [
-                              {"urls": ["stun.botonakis.com:3478"]
+                              {"urls": ["stun.12connect.com:3478"]
                                }
                                ]
                                },
