@@ -23,7 +23,7 @@ with col1:
     ctx = webrtc_streamer(key="example", video_frame_callback=video_frame_callback, 
                           
                           rtc_configuration={"iceServers": [
-                               "urls": ["stun:relay1.expressturn.com:3478"],
+                               "urls": ["relay1.expressturn.com:3478"],
       "username": "efQB4HTEGI9W41QMFK",
       "credential": "W1pfkptr9mSZn5Fe"
                                ]
