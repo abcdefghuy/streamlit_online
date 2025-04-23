@@ -30,18 +30,15 @@ with col1:
                                },
                           media_stream_constraints={"video": True, "audio": False})
     
-imgout_frame =col2.empty()
+imgout_place = col2.empty()
 
-fig_place = col2.empty()
 
 while ctx.state.playing:
     with lock:
         img = img_container["img"]
     if img is None:
         continue
-
-
-
+    # phát hiện khuôn mặt, đóng khung 
     imgout = cv2.flip(img, 0)
-    imgout_place.image(imgout, channels="BGR", use_column_width=True)
-    
+
+    imgout_place.image(imgout, channels="BGR")
