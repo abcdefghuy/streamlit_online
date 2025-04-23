@@ -23,7 +23,7 @@ with col1:
     ctx = webrtc_streamer(key="example", video_frame_callback=video_frame_callback, 
                           
                           rtc_configuration={"iceServers": [
-                              {"urls": ["stun:iphone-stun.strato-iphone.de:3478"]
+                              {"urls": ["stun:stun.l.google.com:19302"]
                                }
                                ]
                                },
